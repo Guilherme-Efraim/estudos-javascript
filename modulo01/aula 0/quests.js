@@ -9,7 +9,7 @@ Fatorial de um número: FEITO
 Número primo: FEITO
     Implemente uma função que verifique se um número é primo e retorne true se for e false se não for.  
 
-Sequência de Fibonacci: 
+Sequência de Fibonacci: FEITO
     Desenvolva uma função fibonacci. A sequência de Fibonacci é uma sequência numérica 
     onde cada número é a soma dos dois anteriores, começando geralmente por (0) e (1)
     (0, 1, 1, 2, 3, 5, 8, ...).
