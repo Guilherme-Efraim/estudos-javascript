@@ -20,4 +20,15 @@ function numFatorial( numero ){
     }
 }
 
-console.log(numFatorial(5))
+// console.log(numFatorial(5))
+
+function fatorial(numero){
+    let i = 1
+    while(numero>=1){
+        i*=numero
+        numero--
+    }
+    return i;
+}
+
+// console.log(fatorial(5))
