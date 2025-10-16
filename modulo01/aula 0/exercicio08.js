@@ -2,15 +2,19 @@
 //     Escreva uma função que conte e retorne o número de vogais em uma string fornecida pelo usuário.  
 
 function numVogais(str){
-    const minuStr = str.toLowerCase().split();
-    const vogais = "aeiou"
     let contador = 0
-
-    for(i of minuStr){
-        if(vogais.includes(minuStr)){
+                                // const contador = str.length; // aqui está guardando apenas o tamanho da string, não a string.
+    for(let l of str){          // aqui for in não pode iterar os caracteres de uma string.
+        const vogais = "aeiou"
+        if(vogais.includes(l)){
+            contador++;
         }
-        return contador;
+    }
+    if(contador >= 1){
+        return `Tem ${contador} vogais.`
+    } else {
+        return "Não tem vogal"
     }
 }
 
-console.log(numVogais("Olá Mundo"))
+console.log(numVogais("guilherme"))

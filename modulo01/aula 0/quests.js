@@ -20,7 +20,7 @@ Verificar palíndromo:
     
 Exercícios avançados     
 
-Contar vogais em uma string: 
+Contar vogais em uma string:  FEITO
     Escreva uma função que conte e retorne o número de vogais em uma string fornecida pelo usuário.  
     
 Calcular montante de investimento: 
@@ -29,6 +29,5 @@ Calcular montante de investimento:
 Calcular IMC: 
     Desenvolva uma função que calcule o Índice de Massa Corporal (IMC) a partir do peso e da altura do usuário. 
 */
-// Variavel imutavel.
 
 
