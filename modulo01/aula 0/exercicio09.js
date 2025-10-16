@@ -2,3 +2,13 @@
 //     Crie uma função que calcule e retorne o valor 
 //     final de um investimento, considerando capital inicial, 
 //     taxa de juros mensal e tempo em meses. 
+
+const usuario = {
+    valorInic: 1000,
+    jurosMen: 10,
+    tempMes: 1,
+}
+
+function calcInvestimento(valor){
+    
+}
