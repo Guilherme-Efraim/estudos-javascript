@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 3px;
+}
+
+.box {
+    margin-top: 40px;
+    height: 500px;
+    width: 300px;
+    border: 3px solid black;
+}
+
+#caixa01 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 2rem;
+}
+
+.curso {
+    border-radius: 10px;
+    padding: 0.7rem;
+    background-color: rgb(160, 158, 158);
+    border: 2px solid rgb(94, 93, 93);
+}
+
+.btn {
+    margin-top: 250px;
+    color: white;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 2px;
+    background-color: rgb(38, 38, 126);
+}
