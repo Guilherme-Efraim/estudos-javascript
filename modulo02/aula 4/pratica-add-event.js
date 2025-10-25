@@ -19,7 +19,10 @@ btnCopiar.addEventListener("click", () => {
 })
 
 btnVoltar.addEventListener("click", () => {
-    cursos.classList.remove("destaque")
+    const cursoSemDestaque = [...document.querySelectorAll(".curso:not(.destaque)")]
+    cursoSemDestaque.map((el) => {
+        caixa1.appendChild(el)
+    })
 })
 
 
