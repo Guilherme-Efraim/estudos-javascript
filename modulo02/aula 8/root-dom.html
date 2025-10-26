@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando DOM</title>
+    <link rel="stylesheet" href="./aula08style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="caixa1" class="box">
+
+            <div class="text-box">
+                <label for="icurso">Nome do Curso</label>
+                <input type="text" name="curso" id="icurso">
+            </div>
+
+            <div class="box-btn">
+
+                <button id="adicionar" class="btn">
+                    Adicionar
+                </button>
+
+                <button id="removSelecionado" class="btn">
+                    Remover Selecionado
+                </button>
+
+                <button id="CurSelecionado" class="btn">
+                    Curso Selecionado
+                </button>
+
+            </div>
+
+        </div>
+
+        <div id="caixa2" class="box">
+
+            <div id="c1" class="curso">
+                HTML
+                <input type="radio">
+            </div>
+
+            <div id="c2" class="curso">
+                CSS
+                <input type="radio">
+            </div>
+
+            <div id="c3" class="curso">
+                JAVASCRIPT
+                <input type="radio">
+            </div>
+
+            <div id="c4" class="curso">
+                PHP
+                <input type="radio">
+            </div>
+
+            <div id="c5" class="curso">
+                REACT
+                <input type="radio">
+            </div>
+
+            <div id="c6" class="curso">
+                MySQL
+                <input type="radio">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./filter02.js"></script>
+</body>
+
+</html>
