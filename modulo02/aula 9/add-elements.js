@@ -12,6 +12,25 @@ cursos.map((el, pos) => {
     const novoCurso = document.createElement("div")
     novoCurso.setAttribute("id", "c"+ pos)
     novoCurso.setAttribute("class", "curso c1")
-    novoCurso.innerHTML=el
+
+    const text = document.createElement("div")
+    text.setAttribute("class", "textCurso")
+    text.innerHTML=el
+    
+    const lixxo = document.createElement("div")
+    lixxo.setAttribute("class", "lixeira")
+    lixxo.innerHTML="Lixo"
+    
+    const radio = document.createElement("input")
+    radio.setAttribute("class", "radio")
+    radio.setAttribute("type","radio")
+
+    lixxo.addEventListener("click", (evt) => {
+        caixa2.removeChild(novoCurso)
+    })
+
+    novoCurso.appendChild(text)
+    novoCurso.appendChild(radio)
+    novoCurso.appendChild(lixxo)
     caixa2.appendChild(novoCurso)
 })
