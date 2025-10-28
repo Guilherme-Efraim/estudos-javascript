@@ -52,3 +52,11 @@ function soma(num1, num2){
 }
 
 // console.log(soma(10, 10))
+
+// Arrow Function.
+const variavel = ((para1, para2) => {
+    const soma = para1 + para2
+    return soma
+})
+
+// console.log(variavel(20, 20))

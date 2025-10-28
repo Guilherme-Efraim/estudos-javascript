@@ -1,0 +1,23 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.quest {
+    text-align: center;
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+#caixa01 {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(189, 189, 189);
+}
+
+.boxFilho {
+    box-shadow: 2px 2px 3px solid black;
+    border-radius: 10px;
+    background-color: rgb(33, 45, 155);
+}
