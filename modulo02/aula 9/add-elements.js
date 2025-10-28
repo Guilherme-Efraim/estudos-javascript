@@ -16,14 +16,14 @@ cursos.map((el, pos) => {
     const text = document.createElement("div")
     text.setAttribute("class", "textCurso")
     text.innerHTML=el
+
+    const radio = document.createElement("input")
+    radio.setAttribute("class", "radio")
+    radio.setAttribute("type","radio")
     
     const lixxo = document.createElement("div")
     lixxo.setAttribute("class", "lixeira")
     lixxo.innerHTML="Lixo"
-    
-    const radio = document.createElement("input")
-    radio.setAttribute("class", "radio")
-    radio.setAttribute("type","radio")
 
     lixxo.addEventListener("click", (evt) => {
         caixa2.removeChild(novoCurso)
@@ -32,5 +32,6 @@ cursos.map((el, pos) => {
     novoCurso.appendChild(text)
     novoCurso.appendChild(radio)
     novoCurso.appendChild(lixxo)
+
     caixa2.appendChild(novoCurso)
 })
