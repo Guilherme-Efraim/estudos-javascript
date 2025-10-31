@@ -2,6 +2,7 @@ const telaResultado = document.getElementById("telaResultado")
 const telaCalculo = document.getElementById("telaCalculo")
 
 const botoes = document.getElementById("botoes")
+
 const btnRecursos = document.getElementById("btnRecursos")
 
 const caixaNumeros = document.getElementById("caixaNumeros")
@@ -11,17 +12,16 @@ const operadoresLogicos = document.getElementById("operadoresLogicos")
 
 /*-----------Recursos-------------*/
 
-const btnRecurso = ["Clear", "Remove"]
+const btnRecurso = ["Clear", "Remove", "="]
 
 btnRecurso.map((ele, posi) => {
     const btnClear = document.createElement("button")
-    btnClear.setAttribute("id", "recurso"+posi)
+    btnClear.setAttribute("id", "recurso" + posi)
     btnClear.setAttribute("class", "btnRecurso")
-    btnClear.innerHTML=ele
+    btnClear.innerHTML = ele
 
     btnRecursos.appendChild(btnClear)
 })
-console.log(btnRecursos)
 
 /*-----------Números-------------*/
 
@@ -34,7 +34,7 @@ btnNumeros.map((ele, posi) => {
     const num = document.createElement("button")
     num.setAttribute("id", "num" + posi)
     num.setAttribute("class", "numeroMsm")
-    num.innerHTML=ele
+    num.innerHTML = ele
 
     btnAdicionado.appendChild(num)
     caixaNumeros.appendChild(btnAdicionado)
@@ -48,11 +48,29 @@ operadoresArr.map((ele, posi) => {
     const operadorAdd = document.createElement("button")
     operadorAdd.setAttribute("id", "operador" + posi)
     operadorAdd.setAttribute("class", "operadores")
-    operadorAdd.innerHTML=ele
+    operadorAdd.innerHTML = ele
 
     operadoresLogicos.appendChild(operadorAdd)
 })
 
+/*------------------------*/
+
+botoes.addEventListener("click", (evt) => {
+    const valores = []
+
+    if (evt.target.tagName === 'BUTTON') {
+        valores.push(evt.target)
+    }
+
+    valores.map((ele, posi) => {
+        console.log(ele)
+        telaCalculo.innerHTML = ele
+    })
+})
+
+// btnClicado.map((ele, posi) => {
+//     telaCalculo.innerHTML = ele
+// })
 
 
 
