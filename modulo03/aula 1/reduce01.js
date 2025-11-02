@@ -18,5 +18,5 @@ btnReduzir.addEventListener("click", (evt)=>{
         dobro.push(atual*2)
         return atual + anterior
     })
-    resultado.innerHTML+="<br/>V.anterior:"+ant+"<br/>V.atual:"+atu+"<br/>:"+dobro
+    // resultado.innerHTML+="<br/>V.anterior:"+ant+"<br/>V.atual:"+atu+"<br/>:"+dobro
 })

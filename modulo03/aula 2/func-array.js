@@ -16,7 +16,7 @@ const op = [
     },
     (val) => {
         for(v of val){
-            console.log(v)
+            // console.log(v)
         }
     }
 ]

@@ -13,7 +13,7 @@ musicas.add("musica10")
 musicas.delete("musica1")
 musicas.clear()
 
-console.log(musicas)
+// console.log(musicas)
 
 
 // Metodo próprio da coleção SET.
