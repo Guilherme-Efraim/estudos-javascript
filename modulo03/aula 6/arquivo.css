@@ -1,0 +1,16 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#campoForm {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 10px;
+}
+
+.res {
+    margin: 10px 10px;
+    min-height: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}

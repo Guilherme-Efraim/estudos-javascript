@@ -6,17 +6,50 @@ Operador new,
     metodo constructor(){}, recebe parâmetros.
 
 */
+
+const btn_add = document.querySelector("#btn_add")
+const res = document.querySelector(".res")
+
 class Pessoa{
-    constructor(pnome){
+    constructor(pnome, pidade){
         this.nome = pnome
+        this.idade = pidade
+    }
+    getNome(){
+        return this.nome
+    }
+    getidade(){
+        return this.idade
+    }
+    setidade(idade){
+        this.idade = idade
+    }
+    info(){
+        console.log(`Nome..: ${this.nome}`)
+        console.log(`Idade.: ${this.idade}`)
+        console.log("---------------------")
     }
 }
 
-// new Instância um novo objeto
-let p1 = new Pessoa(10)
-let p2 = new Pessoa("Asdervardson")
-let p3 = new Pessoa("Brenasclartel")
+let pessoas = []
 
-console.log(p1.nome)
-console.log(p2.nome)
-console.log(p3.nome)
+const novaPessoa = () => {
+    res.innerHTML = ""
+    pessoas.map((ele, posi) => {
+        const cPessoa = document.createElement("div")
+        cPessoa.setAttribute("class", "pessoa")
+        cPessoa.innerHTML = `Nome: ${ele.getNome()} <br/> Idade: ${ele.getidade()}`
+        res.appendChild(cPessoa)
+    })
+}
+
+btn_add.addEventListener("click", (evt)=> {
+    const nome = document.querySelector("#f_nome")
+    const idade = document.querySelector("#f_idade")
+    const p = new Pessoa(nome.value, idade.value)
+    pessoas.push(p)
+    nome.value = ""
+    idade.value = ""
+    nome.focus()
+    novaPessoa()
+})
