@@ -5,51 +5,45 @@ Operador new,
     class é a base, recebe um nome Ex: Pessoa.
     metodo constructor(){}, recebe parâmetros.
 
+Metodo: set altera o valor de uma propriedade da class.
+Metodo: get retorna o valor de uma propriedade de um class.
 */
 
-const btn_add = document.querySelector("#btn_add")
-const res = document.querySelector(".res")
-
-class Pessoa{
-    constructor(pnome, pidade){
+class Carro {
+    constructor(pnome, ptipo){
         this.nome = pnome
-        this.idade = pidade
-    }
-    getNome(){
-        return this.nome
-    }
-    getidade(){
-        return this.idade
-    }
-    setidade(idade){
-        this.idade = idade
+        if(ptipo == 1){
+            this.tipo = "Esportivo"
+            this.velmax = 300
+        } else if(ptipo == 2){
+            this.tipo = "Utilitário"
+            this.velmax = 100
+        } else if(ptipo == 3){
+            this.tipo = "Passeio"
+            this.velmax = 160
+        } else {
+            this.tipo = "Militar"
+            this.velmax = 180
+        }
     }
     info(){
-        console.log(`Nome..: ${this.nome}`)
-        console.log(`Idade.: ${this.idade}`)
-        console.log("---------------------")
+        console.log(`Nome: ${this.nome}`)
+        console.log(`Tipo: ${this.tipo}`)
+        console.log(`Velociade: ${this.velmax}`)
     }
 }
 
-let pessoas = []
+let c1 = new Carro("Rapidão", 1)
+let c2 = new Carro("Super Luxo", 2)
+let c3 = new Carro("Bombadão", 4)
+let c4 = new Carro("Carrego tudo", 3)
 
-const novaPessoa = () => {
-    res.innerHTML = ""
-    pessoas.map((ele, posi) => {
-        const cPessoa = document.createElement("div")
-        cPessoa.setAttribute("class", "pessoa")
-        cPessoa.innerHTML = `Nome: ${ele.getNome()} <br/> Idade: ${ele.getidade()}`
-        res.appendChild(cPessoa)
-    })
-}
+// console.log(c1.nome)
+// console.log(c1.tipo)
+// console.log(c1.velmax)
+// console.log(c2.nome)
+// console.log(c3.nome)
+// console.log(c4.nome)
 
-btn_add.addEventListener("click", (evt)=> {
-    const nome = document.querySelector("#f_nome")
-    const idade = document.querySelector("#f_idade")
-    const p = new Pessoa(nome.value, idade.value)
-    pessoas.push(p)
-    nome.value = ""
-    idade.value = ""
-    nome.focus()
-    novaPessoa()
-})
+c1.info()
+c2.info()
